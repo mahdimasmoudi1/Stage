@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Receiver</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Receiver</h1>
+        <div class="data-section">
+            <div id="receive-from-script" class="data-display">
+                <!-- Data received from the script will be displayed here -->
+                Awaiting data from the script...
+            </div>
+            <div class="data-form">
+                <form id="data-form">
+                    <label for="data-input">Enter Data:</label>
+                    <input type="text" id="data-input" placeholder="Enter data...">
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="control-buttons">
+                <button id="start-refresh">Start Refresh</button>
+                <button id="stop-refresh">Stop Refresh</button>
+            </div>
+            <div class="interval-buttons">
+                <button id="refresh-5">5s</button>
+                <button id="refresh-30">30s</button>
+                <button id="refresh-60">60s</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

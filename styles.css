@@ -1,0 +1,109 @@
+/* Styles pour le conteneur principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style pour le titre */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style pour la section des données */
+.data-section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* Style pour la zone d'affichage des données */
+.data-display {
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Style pour le formulaire d'envoi de données */
+.data-form {
+    margin-top: 20px;
+}
+
+/* Style pour le champ de saisie de données */
+#data-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style pour le bouton "Send" */
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style pour les boutons de contrôle */
+.control-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Ajoutez une transition pour une animation en douceur */
+}
+
+.control-buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* Style pour les boutons d'intervalle de rafraîchissement */
+.interval-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Ajoutez une transition pour une animation en douceur */
+
+}
+.interval-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.data-box {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;}
+.button:active {
+        background-color: red;
+    }
