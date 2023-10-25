@@ -5,6 +5,16 @@ import threading
 
 # Créer un tableau pré-rempli avec des valeurs initiales
 tableau = [
+    ["0500", 0, 100,"0002","7107"],
+    ["0502", 0, 100,"0002","D0C7"],
+    ["0504", 0, 100,"0002","6408"],
+    ["0506", 0, 100,"0002","7DC8"],
+    ["0508", 0, 100,"0002","3408"],
+    ["050A", 0, 100,"0002","2DC8"],
+    ["050C", 0, 100,"0002","05C8"],
+    ["050E", 0, 10000,"0002","10C4"],
+    ["0510", 0, 10000,"0002","0408"],
+    ["0512", 0, 10000,"0002","1DC8"],
     ["0514", 0, 10000,"0002","3103"],
     ["0516", 1, 1,"0002","90c3"],
     ["0518", 1, 1,"0002","f100"],
@@ -47,7 +57,7 @@ tableau = [
 ]
 
 # Configuration du port série
-ser = serial.Serial('COM7', baudrate=38400, timeout=1)
+ser = serial.Serial('COM9', baudrate=38400, timeout=1)
 # Configuration de l'URL de l'API Flask
 api_url = "http://127.0.0.1:5002/receive-from-script"  # Changer l'URL si nécessaire
 
@@ -163,7 +173,7 @@ while True:
                 print(f"Données envoyées : {data_string}")
 
         # Attendre un certain temps avant de faire la prochaine demande
-        time.sleep(5)  # Attendre 5 secondes entre chaque demande
+        time.sleep(1)  # Attendre 5 secondes entre chaque demande
 
     except KeyboardInterrupt:
         break
