@@ -6,7 +6,4 @@ pip install pyserial
 	pip install flask-cors
 	
 Commande utilisé : 
-	Pour executer les fichiers : python [Nom de fichier].py
 	Pour Construire un fichier executable : pyinstaller --onefile [Nom de fichier].py
-
- 
